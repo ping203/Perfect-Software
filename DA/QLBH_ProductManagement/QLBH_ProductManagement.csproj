@@ -1,0 +1,1138 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20BD0040-CE74-48B7-B5E7-3B8A8E00756F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLBH_ProductManagement</RootNamespace>
+    <AssemblyName>QLBH_ProductManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dialogs.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.SpellChecker.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeMap.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Input.Manipulations" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS\AreaBUS.cs" />
+    <Compile Include="BUS\BangTheoDoiCongNoBUS.cs" />
+    <Compile Include="BUS\BaoCaoTheoChungTuBUS.cs" />
+    <Compile Include="BUS\ChildFormBUS.cs" />
+    <Compile Include="BUS\DetailTransWarehouseBUS.cs" />
+    <Compile Include="BUS\CustomerBUS.cs" />
+    <Compile Include="BUS\DepartmentBUS.cs" />
+    <Compile Include="BUS\DetailBuyGoodsBUS.cs" />
+    <Compile Include="BUS\DetailSellGoodsBUS.cs" />
+    <Compile Include="BUS\DKThanhToanBUS.cs" />
+    <Compile Include="BUS\EmployeesBUS.cs" />
+    <Compile Include="BUS\GoodBUS.cs" />
+    <Compile Include="BUS\GroupFormBUS.cs" />
+    <Compile Include="BUS\GroupOfGoodsBUS.cs" />
+    <Compile Include="BUS\GroupUserBUS.cs" />
+    <Compile Include="BUS\InforDetailBuyBUS.cs" />
+    <Compile Include="BUS\InforSellBUS.cs" />
+    <Compile Include="BUS\InforTransWarehouseBUS.cs" />
+    <Compile Include="BUS\KhuVucBUS.cs" />
+    <Compile Include="BUS\NguoiDungBUS.cs" />
+    <Compile Include="BUS\NhapXuatTonBUS.cs" />
+    <Compile Include="BUS\NhomHangBUS.cs" />
+    <Compile Include="BUS\OBFormBUS.cs" />
+    <Compile Include="BUS\PhieuChiTienBUS.cs" />
+    <Compile Include="BUS\PhieuThuTienBUS.cs" />
+    <Compile Include="BUS\PTThanhToanBUS.cs" />
+    <Compile Include="BUS\CurrencyBUS.cs" />
+    <Compile Include="BUS\RuleFormBUS.cs" />
+    <Compile Include="BUS\SupplierBUS.cs" />
+    <Compile Include="BUS\TheKhoBUS.cs" />
+    <Compile Include="BUS\TheoHangHoaBuyBUS.cs" />
+    <Compile Include="BUS\TonKhoBUS.cs" />
+    <Compile Include="BUS\TonKhoTongHopBUS.cs" />
+    <Compile Include="BUS\UnitBUS.cs" />
+    <Compile Include="BUS\UserBUS.cs" />
+    <Compile Include="BUS\VaiTroBUS.cs" />
+    <Compile Include="BUS\VaiTro_ChucNangBUS.cs" />
+    <Compile Include="BUS\WarehouseBUS.cs" />
+    <Compile Include="cSystemLog.cs" />
+    <Compile Include="DAO\AreaDAO.cs" />
+    <Compile Include="DAO\BangTheoDoiCongNoDAO.cs" />
+    <Compile Include="DAO\BaoCaoTheoChungTuDAO.cs" />
+    <Compile Include="DAO\DetailTransWarehouseDAO.cs" />
+    <Compile Include="DAO\DetailSellGoodsDAO.cs" />
+    <Compile Include="DAO\DKThanhToanDAO.cs" />
+    <Compile Include="DAO\InforDetailSellDAO.cs" />
+    <Compile Include="DAO\InforTransWarehouseDAO.cs" />
+    <Compile Include="DAO\NguoiDungDAO.cs" />
+    <Compile Include="DAO\NhapXuatTonDAO.cs" />
+    <Compile Include="DAO\PhieuChiTienDAO.cs" />
+    <Compile Include="DAO\PhieuThuTienDAO.cs" />
+    <Compile Include="DAO\PTThanhToanDAO.cs" />
+    <Compile Include="DAO\TheKhoDAO.cs" />
+    <Compile Include="DAO\TheoHangHoaBuyDAO.cs" />
+    <Compile Include="DAO\TonKhoDAO.cs" />
+    <Compile Include="DAO\ConnectionDB.cs" />
+    <Compile Include="DAO\CustomerDAO.cs" />
+    <Compile Include="DAO\DepartmentDAO.cs" />
+    <Compile Include="DAO\DetailBuyGoodsDAO.cs" />
+    <Compile Include="DAO\EmployeesDAO.cs" />
+    <Compile Include="DAO\Execute.cs" />
+    <Compile Include="DAO\FormChildDAO.cs" />
+    <Compile Include="DAO\GoodDAO.cs" />
+    <Compile Include="DAO\GroupFormDAO.cs" />
+    <Compile Include="DAO\GroupOfGoodsDAO.cs" />
+    <Compile Include="DAO\GroupUserDAO.cs" />
+    <Compile Include="DAO\InforDetailBuyDAO.cs" />
+    <Compile Include="DAO\KhuVucDAO.cs" />
+    <Compile Include="DAO\NhomHangDAO.cs" />
+    <Compile Include="DAO\OBFormDAO.cs" />
+    <Compile Include="DAO\CurrencyDAO.cs" />
+    <Compile Include="DAO\RuleFormDAO.cs" />
+    <Compile Include="DAO\SupplierDAO.cs" />
+    <Compile Include="DAO\TonKhoTongHopDAO.cs" />
+    <Compile Include="DAO\UnitDAO.cs" />
+    <Compile Include="DAO\UserDAO.cs" />
+    <Compile Include="DAO\VaiTroDAO.cs" />
+    <Compile Include="DAO\VaiTro_ChucNangDAO.cs" />
+    <Compile Include="DAO\WarehouseDAO.cs" />
+    <Compile Include="DTO\AreaDTO.cs" />
+    <Compile Include="DTO\BangTheoDoiCongNo.cs" />
+    <Compile Include="DTO\BaoCaoTheoChungTu.cs" />
+    <Compile Include="DTO\DetailTransWarehouseDTO.cs" />
+    <Compile Include="DTO\GlobarVar.cs" />
+    <Compile Include="DTO\InforTransWarehouseDTO.cs" />
+    <Compile Include="DTO\CustomerDTO.cs" />
+    <Compile Include="DTO\DepartmentDTO.cs" />
+    <Compile Include="DTO\DetailBuyGoods.cs" />
+    <Compile Include="DTO\DetailSellGoods.cs" />
+    <Compile Include="DTO\DKThanhToan.cs" />
+    <Compile Include="DTO\EmployeesDTO.cs" />
+    <Compile Include="DTO\FormChild.cs" />
+    <Compile Include="DTO\GoodDTO.cs" />
+    <Compile Include="DTO\GroupForm.cs" />
+    <Compile Include="DTO\GroupOfGoodsDTO.cs" />
+    <Compile Include="DTO\GroupUser.cs" />
+    <Compile Include="DTO\InforDetailSell.cs" />
+    <Compile Include="DTO\NguoiDung.cs" />
+    <Compile Include="DTO\NhapXuatTon.cs" />
+    <Compile Include="DTO\PhieuChiTien.cs" />
+    <Compile Include="DTO\PhieuThuTien.cs" />
+    <Compile Include="DTO\PTThanhToan.cs" />
+    <Compile Include="DTO\InforDetailBuy.cs" />
+    <Compile Include="DTO\KhuVuc.cs" />
+    <Compile Include="DTO\NhomHang.cs" />
+    <Compile Include="DTO\OBForm.cs" />
+    <Compile Include="DTO\CurrencyDTO.cs" />
+    <Compile Include="DTO\RuleForm.cs" />
+    <Compile Include="DTO\SetIDAutomatic.cs" />
+    <Compile Include="DTO\SupplierDTO.cs" />
+    <Compile Include="DTO\SystemLogDTO.cs" />
+    <Compile Include="DTO\TheKhoDTO.cs" />
+    <Compile Include="DTO\TheoHangHoaBuy.cs" />
+    <Compile Include="DTO\TonKho.cs" />
+    <Compile Include="DTO\TonKhoTongHop.cs" />
+    <Compile Include="DTO\UnitDTO.cs" />
+    <Compile Include="DTO\UserDTO.cs" />
+    <Compile Include="DTO\UserGroupDTO.cs" />
+    <Compile Include="DTO\VaiTroDTO.cs" />
+    <Compile Include="DTO\VaiTro_ChucNangDTO.cs" />
+    <Compile Include="DTO\WarehouseDTO.cs" />
+    <Compile Include="frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrint.Designer.cs">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\AreaAction\frmAddArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\AreaAction\frmAddArea.Designer.cs">
+      <DependentUpon>frmAddArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\AreaAction\frmUpdateArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\AreaAction\frmUpdateArea.Designer.cs">
+      <DependentUpon>frmUpdateArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\frmCM_LapPhieuThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\frmCM_LapPhieuThu.Designer.cs">
+      <DependentUpon>frmCM_LapPhieuThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_DanhSachPhieuCongNo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_DanhSachPhieuCongNo.Designer.cs">
+      <DependentUpon>ucCM_DanhSachPhieuCongNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_DanhSachPhieuThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_DanhSachPhieuThu.Designer.cs">
+      <DependentUpon>ucCM_DanhSachPhieuThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_DanhSachPhieuTraNgay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_DanhSachPhieuTraNgay.Designer.cs">
+      <DependentUpon>ucCM_DanhSachPhieuTraNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_TheoDoiCongNo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_TheoDoiCongNo.Designer.cs">
+      <DependentUpon>ucCM_TheoDoiCongNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_TongHopCongNo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_TongHopCongNo.Designer.cs">
+      <DependentUpon>ucCM_TongHopCongNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\CurrencyAction\frmAddCurrent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\CurrencyAction\frmAddCurrent.Designer.cs">
+      <DependentUpon>frmAddCurrent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\CurrencyAction\frmCurrency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\CurrencyAction\frmCurrency.Designer.cs">
+      <DependentUpon>frmCurrency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\CurrencyAction\frmUpdateCurrent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\CurrencyAction\frmUpdateCurrent.Designer.cs">
+      <DependentUpon>frmUpdateCurrent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\CustomerAction\frmAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\CustomerAction\frmAddCustomer.Designer.cs">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\CustomerAction\frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\CustomerAction\frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\CustomerAction\frmUpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\CustomerAction\frmUpdateCustomer.Designer.cs">
+      <DependentUpon>frmUpdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\frmBarcodePrinting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\frmBarcodePrinting.Designer.cs">
+      <DependentUpon>frmBarcodePrinting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\DepartmentAction\frmAddDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\DepartmentAction\frmAddDepartment.Designer.cs">
+      <DependentUpon>frmAddDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\DepartmentAction\frmUpdateDepartmentAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\DepartmentAction\frmUpdateDepartmentAction.Designer.cs">
+      <DependentUpon>frmUpdateDepartmentAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\EmployeesAction\frmAddEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\EmployeesAction\frmAddEmployees.Designer.cs">
+      <DependentUpon>frmAddEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\EmployeesAction\frmUpdateEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\EmployeesAction\frmUpdateEmployees.Designer.cs">
+      <DependentUpon>frmUpdateEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\AreaAction\frmArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\AreaAction\frmArea.Designer.cs">
+      <DependentUpon>frmArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\BuyAction\frmBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\BuyAction\frmBuy.Designer.cs">
+      <DependentUpon>frmBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\SupplierAction\frmAddSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\SupplierAction\frmAddSupplier.Designer.cs">
+      <DependentUpon>frmAddSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\SupplierAction\frmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\SupplierAction\frmSupplier.Designer.cs">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\SupplierAction\frmUpdateSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\SupplierAction\frmUpdateSupplier.Designer.cs">
+      <DependentUpon>frmUpdateSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\frmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\frmBackup.Designer.cs">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\RoleAction\frmPhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\RoleAction\frmPhanQuyen.Designer.cs">
+      <DependentUpon>frmPhanQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Trợ Giúp\frmContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Trợ Giúp\frmContact.Designer.cs">
+      <DependentUpon>frmContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\frmDocumentManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\frmDocumentManagement.Designer.cs">
+      <DependentUpon>frmDocumentManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmGlobalVariable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmGlobalVariable.Designer.cs">
+      <DependentUpon>frmGlobalVariable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Trợ Giúp\frmInfo_Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Trợ Giúp\frmInfo_Help.Designer.cs">
+      <DependentUpon>frmInfo_Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\frmInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\frmInventory.Designer.cs">
+      <DependentUpon>frmInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\frmRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\frmRestore.Designer.cs">
+      <DependentUpon>frmRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\GoodsAction\frmAddGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\GoodsAction\frmAddGoods.Designer.cs">
+      <DependentUpon>frmAddGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\frmPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\frmPay.Designer.cs">
+      <DependentUpon>frmPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\frmPay_LapPhieuChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\frmPay_LapPhieuChi.Designer.cs">
+      <DependentUpon>frmPay_LapPhieuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\ucPay_DanhSachPhieuChi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\ucPay_DanhSachPhieuChi.Designer.cs">
+      <DependentUpon>ucPay_DanhSachPhieuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\ucPay_DanhSachPhieuCongNo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\ucPay_DanhSachPhieuCongNo.Designer.cs">
+      <DependentUpon>ucPay_DanhSachPhieuCongNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\ucPay_DanhSachPhieuTraNgay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\ucPay_DanhSachPhieuTraNgay.Designer.cs">
+      <DependentUpon>ucPay_DanhSachPhieuTraNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\ucPay_TheoDoiCongNo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\ucPay_TheoDoiCongNo.Designer.cs">
+      <DependentUpon>ucPay_TheoDoiCongNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\ucPay_TongHopCongNo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\PayAction\ucPay_TongHopCongNo.Designer.cs">
+      <DependentUpon>ucPay_TongHopCongNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\frmSalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\frmSalesReport.Designer.cs">
+      <DependentUpon>frmSalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_DoanhSoTheoHangHoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_DoanhSoTheoHangHoa.Designer.cs">
+      <DependentUpon>ucSR_DoanhSoTheoHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_DoanhSoTheoKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_DoanhSoTheoKhachHang.Designer.cs">
+      <DependentUpon>ucSR_DoanhSoTheoKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_DoanhSoTheoNgay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_DoanhSoTheoNgay.Designer.cs">
+      <DependentUpon>ucSR_DoanhSoTheoNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_DoanhSoTheoNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_DoanhSoTheoNhanVien.Designer.cs">
+      <DependentUpon>ucSR_DoanhSoTheoNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_TheoChungTu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_TheoChungTu.Designer.cs">
+      <DependentUpon>ucSR_TheoChungTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_TheoHangHoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_TheoHangHoa.Designer.cs">
+      <DependentUpon>ucSR_TheoHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_TheoNgay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_TheoNgay.Designer.cs">
+      <DependentUpon>ucSR_TheoNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_TheoNhaCungCap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_TheoNhaCungCap.Designer.cs">
+      <DependentUpon>ucSR_TheoNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\UserAction\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\UserAction\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\frmCollectMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\CollectMoneyAction\frmCollectMoney.Designer.cs">
+      <DependentUpon>frmCollectMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\DepartmentAction\frmDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\DepartmentAction\frmDepartment.Designer.cs">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\EmployeesAction\frmEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\EmployeesAction\frmEmployees.Designer.cs">
+      <DependentUpon>frmEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\frmEnterBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\frmEnterBalance.Designer.cs">
+      <DependentUpon>frmEnterBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\GoodsAction\frmGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\GoodsAction\frmGoods.Designer.cs">
+      <DependentUpon>frmGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\GroupOfGoodsAction\frmGroupOfGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\GroupOfGoodsAction\frmGroupOfGoods.Designer.cs">
+      <DependentUpon>frmGroupOfGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\frmInfor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\frmInfor.Designer.cs">
+      <DependentUpon>frmInfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\RoleAction\frmRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\RoleAction\frmRole.Designer.cs">
+      <DependentUpon>frmRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SellAction\frmSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SellAction\frmSell.Designer.cs">
+      <DependentUpon>frmSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\frmSystemLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\frmSystemLog.Designer.cs">
+      <DependentUpon>frmSystemLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\UnitAction\frmUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\UnitAction\frmUnit.Designer.cs">
+      <DependentUpon>frmUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\WarehouseAction\frmWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\WarehouseAction\frmWarehouse.Designer.cs">
+      <DependentUpon>frmWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseReportAction\frmWarehouseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseReportAction\frmWarehouseReport.Designer.cs">
+      <DependentUpon>frmWarehouseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\GoodsAction\frmUpdateGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\GoodsAction\frmUpdateGoods.Designer.cs">
+      <DependentUpon>frmUpdateGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\GroupOfGoodsAction\frmAddGroupOfGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\GroupOfGoodsAction\frmAddGroupOfGoods.Designer.cs">
+      <DependentUpon>frmAddGroupOfGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\GroupOfGoodsAction\frmUpdateGroupOfGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\GroupOfGoodsAction\frmUpdateGroupOfGoods.Designer.cs">
+      <DependentUpon>frmUpdateGroupOfGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\RoleAction\frmAddRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\RoleAction\frmAddRole.Designer.cs">
+      <DependentUpon>frmAddRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\RoleAction\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\RoleAction\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\BuyAction\ucBuyPhieuNhapHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\BuyAction\ucBuyPhieuNhapHang.Designer.cs">
+      <DependentUpon>ucBuyPhieuNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\BuyAction\ucBuyTheoChungTu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\BuyAction\ucBuyTheoChungTu.Designer.cs">
+      <DependentUpon>ucBuyTheoChungTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\BuyAction\ucBuyTheoHangHoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\BuyAction\ucBuyTheoHangHoa.Designer.cs">
+      <DependentUpon>ucBuyTheoHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SellAction\ucSellPhieuBanHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SellAction\ucSellPhieuBanHang.Designer.cs">
+      <DependentUpon>ucSellPhieuBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SellAction\ucSellTheoChungTu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SellAction\ucSellTheoChungTu.Designer.cs">
+      <DependentUpon>ucSellTheoChungTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SellAction\ucSellTheoHangHoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\SellAction\ucSellTheoHangHoa.Designer.cs">
+      <DependentUpon>ucSellTheoHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\UnitAction\frmAddUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\UnitAction\frmAddUnit.Designer.cs">
+      <DependentUpon>frmAddUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\UnitAction\frmUpdateUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\UnitAction\frmUpdateUnit.Designer.cs">
+      <DependentUpon>frmUpdateUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\WarehouseAction\frmAddWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\WarehouseAction\frmAddWarehouse.Designer.cs">
+      <DependentUpon>frmAddWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\WarehouseAction\frmUpdateWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Danh Mục\WarehouseAction\frmUpdateWarehouse.Designer.cs">
+      <DependentUpon>frmUpdateWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_LichSuHangHoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_LichSuHangHoa.Designer.cs">
+      <DependentUpon>ucWR_LichSuHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_NhapXuatTon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_NhapXuatTon.Designer.cs">
+      <DependentUpon>ucWR_NhapXuatTon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_SoChiTietHangHoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_SoChiTietHangHoa.Designer.cs">
+      <DependentUpon>ucWR_SoChiTietHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_TheKho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_TheKho.Designer.cs">
+      <DependentUpon>ucWR_TheKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_TonKhoTongHop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_TonKhoTongHop.Designer.cs">
+      <DependentUpon>ucWR_TonKhoTongHop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseTranferAction\frmWarehouseTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseTranferAction\frmWarehouseTransfer.Designer.cs">
+      <DependentUpon>frmWarehouseTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseTranferAction\ucWT_PhieuChuyenKho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseTranferAction\ucWT_PhieuChuyenKho.Designer.cs">
+      <DependentUpon>ucWT_PhieuChuyenKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseTranferAction\ucWT_TheoChungTu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseTranferAction\ucWT_TheoChungTu.Designer.cs">
+      <DependentUpon>ucWT_TheoChungTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseTranferAction\ucWT_TheoHangHoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Chức Năng\WarehouseTranferAction\ucWT_TheoHangHoa.Designer.cs">
+      <DependentUpon>ucWT_TheoHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PM_QLBH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PM_QLBH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GUI\Tab Hệ Thống\UserAction\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Tab Hệ Thống\UserAction\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPhieuThuChi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportPhieuThuChi.Designer.cs">
+      <DependentUpon>ReportPhieuThuChi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\AreaAction\frmAddArea.resx">
+      <DependentUpon>frmAddArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\AreaAction\frmUpdateArea.resx">
+      <DependentUpon>frmUpdateArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\CollectMoneyAction\frmCM_LapPhieuThu.resx">
+      <DependentUpon>frmCM_LapPhieuThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_DanhSachPhieuCongNo.resx">
+      <DependentUpon>ucCM_DanhSachPhieuCongNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_DanhSachPhieuThu.resx">
+      <DependentUpon>ucCM_DanhSachPhieuThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_DanhSachPhieuTraNgay.resx">
+      <DependentUpon>ucCM_DanhSachPhieuTraNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_TheoDoiCongNo.resx">
+      <DependentUpon>ucCM_TheoDoiCongNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\CollectMoneyAction\ucCM_TongHopCongNo.resx">
+      <DependentUpon>ucCM_TongHopCongNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\CurrencyAction\frmAddCurrent.resx">
+      <DependentUpon>frmAddCurrent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\CurrencyAction\frmCurrency.resx">
+      <DependentUpon>frmCurrency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\CurrencyAction\frmUpdateCurrent.resx">
+      <DependentUpon>frmUpdateCurrent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\CustomerAction\frmAddCustomer.resx">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\CustomerAction\frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\CustomerAction\frmUpdateCustomer.resx">
+      <DependentUpon>frmUpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\frmBarcodePrinting.resx">
+      <DependentUpon>frmBarcodePrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\DepartmentAction\frmAddDepartment.resx">
+      <DependentUpon>frmAddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\DepartmentAction\frmUpdateDepartmentAction.resx">
+      <DependentUpon>frmUpdateDepartmentAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\EmployeesAction\frmAddEmployees.resx">
+      <DependentUpon>frmAddEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\EmployeesAction\frmUpdateEmployees.resx">
+      <DependentUpon>frmUpdateEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\AreaAction\frmArea.resx">
+      <DependentUpon>frmArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\BuyAction\frmBuy.resx">
+      <DependentUpon>frmBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\SupplierAction\frmAddSupplier.resx">
+      <DependentUpon>frmAddSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\SupplierAction\frmSupplier.resx">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\SupplierAction\frmUpdateSupplier.resx">
+      <DependentUpon>frmUpdateSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Hệ Thống\frmBackup.aa-DJ.resx">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Hệ Thống\frmBackup.resx">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Hệ Thống\RoleAction\frmPhanQuyen.resx">
+      <DependentUpon>frmPhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Trợ Giúp\frmContact.resx">
+      <DependentUpon>frmContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\frmDocumentManagement.resx">
+      <DependentUpon>frmDocumentManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Trợ Giúp\frmInfo_Help.resx">
+      <DependentUpon>frmInfo_Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\frmInventory.resx">
+      <DependentUpon>frmInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Hệ Thống\frmRestore.resx">
+      <DependentUpon>frmRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\GoodsAction\frmAddGoods.resx">
+      <DependentUpon>frmAddGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\PayAction\frmPay.resx">
+      <DependentUpon>frmPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\PayAction\frmPay_LapPhieuChi.resx">
+      <DependentUpon>frmPay_LapPhieuChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\PayAction\ucPay_DanhSachPhieuChi.resx">
+      <DependentUpon>ucPay_DanhSachPhieuChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\PayAction\ucPay_DanhSachPhieuCongNo.resx">
+      <DependentUpon>ucPay_DanhSachPhieuCongNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\PayAction\ucPay_DanhSachPhieuTraNgay.resx">
+      <DependentUpon>ucPay_DanhSachPhieuTraNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\PayAction\ucPay_TheoDoiCongNo.resx">
+      <DependentUpon>ucPay_TheoDoiCongNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\PayAction\ucPay_TongHopCongNo.resx">
+      <DependentUpon>ucPay_TongHopCongNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\SalesReportAction\frmSalesReport.resx">
+      <DependentUpon>frmSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_DoanhSoTheoHangHoa.resx">
+      <DependentUpon>ucSR_DoanhSoTheoHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_DoanhSoTheoKhachHang.resx">
+      <DependentUpon>ucSR_DoanhSoTheoKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_DoanhSoTheoNgay.resx">
+      <DependentUpon>ucSR_DoanhSoTheoNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_DoanhSoTheoNhanVien.resx">
+      <DependentUpon>ucSR_DoanhSoTheoNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_TheoChungTu.resx">
+      <DependentUpon>ucSR_TheoChungTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_TheoHangHoa.resx">
+      <DependentUpon>ucSR_TheoHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_TheoNgay.resx">
+      <DependentUpon>ucSR_TheoNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\SalesReportAction\ucSR_TheoNhaCungCap.resx">
+      <DependentUpon>ucSR_TheoNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Hệ Thống\UserAction\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\CollectMoneyAction\frmCollectMoney.resx">
+      <DependentUpon>frmCollectMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\DepartmentAction\frmDepartment.resx">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\EmployeesAction\frmEmployees.resx">
+      <DependentUpon>frmEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\frmEnterBalance.resx">
+      <DependentUpon>frmEnterBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\GoodsAction\frmGoods.resx">
+      <DependentUpon>frmGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\GroupOfGoodsAction\frmGroupOfGoods.resx">
+      <DependentUpon>frmGroupOfGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Hệ Thống\frmInfor.resx">
+      <DependentUpon>frmInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Hệ Thống\RoleAction\frmRole.resx">
+      <DependentUpon>frmRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\SellAction\frmSell.resx">
+      <DependentUpon>frmSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Hệ Thống\frmSystemLog.resx">
+      <DependentUpon>frmSystemLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\UnitAction\frmUnit.resx">
+      <DependentUpon>frmUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\WarehouseAction\frmWarehouse.resx">
+      <DependentUpon>frmWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\WarehouseReportAction\frmWarehouseReport.resx">
+      <DependentUpon>frmWarehouseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\GoodsAction\frmUpdateGoods.resx">
+      <DependentUpon>frmUpdateGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\GroupOfGoodsAction\frmAddGroupOfGoods.resx">
+      <DependentUpon>frmAddGroupOfGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\GroupOfGoodsAction\frmUpdateGroupOfGoods.resx">
+      <DependentUpon>frmUpdateGroupOfGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Hệ Thống\RoleAction\frmAddRole.resx">
+      <DependentUpon>frmAddRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Hệ Thống\RoleAction\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\BuyAction\ucBuyPhieuNhapHang.resx">
+      <DependentUpon>ucBuyPhieuNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\BuyAction\ucBuyTheoChungTu.resx">
+      <DependentUpon>ucBuyTheoChungTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\BuyAction\ucBuyTheoHangHoa.resx">
+      <DependentUpon>ucBuyTheoHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\SellAction\ucSellPhieuBanHang.resx">
+      <DependentUpon>ucSellPhieuBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\SellAction\ucSellTheoChungTu.resx">
+      <DependentUpon>ucSellTheoChungTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\SellAction\ucSellTheoHangHoa.resx">
+      <DependentUpon>ucSellTheoHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\UnitAction\frmAddUnit.resx">
+      <DependentUpon>frmAddUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\UnitAction\frmUpdateUnit.resx">
+      <DependentUpon>frmUpdateUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\WarehouseAction\frmAddWarehouse.resx">
+      <DependentUpon>frmAddWarehouse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Danh Mục\WarehouseAction\frmUpdateWarehouse.resx">
+      <DependentUpon>frmUpdateWarehouse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_LichSuHangHoa.resx">
+      <DependentUpon>ucWR_LichSuHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_NhapXuatTon.resx">
+      <DependentUpon>ucWR_NhapXuatTon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_SoChiTietHangHoa.resx">
+      <DependentUpon>ucWR_SoChiTietHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_TheKho.resx">
+      <DependentUpon>ucWR_TheKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\WarehouseReportAction\ucWR_TonKhoTongHop.resx">
+      <DependentUpon>ucWR_TonKhoTongHop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\WarehouseTranferAction\frmWarehouseTransfer.resx">
+      <DependentUpon>frmWarehouseTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\WarehouseTranferAction\ucWT_PhieuChuyenKho.resx">
+      <DependentUpon>ucWT_PhieuChuyenKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\WarehouseTranferAction\ucWT_TheoChungTu.resx">
+      <DependentUpon>ucWT_TheoChungTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tab Chức Năng\WarehouseTranferAction\ucWT_TheoHangHoa.resx">
+      <DependentUpon>ucWT_TheoHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="GUI\Tab Hệ Thống\UserAction\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPhieuThuChi.resx">
+      <DependentUpon>ReportPhieuThuChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="PM_QLBH.xsc">
+      <DependentUpon>PM_QLBH.xsd</DependentUpon>
+    </None>
+    <None Include="PM_QLBH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PM_QLBH.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PM_QLBH.xss">
+      <DependentUpon>PM_QLBH.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
